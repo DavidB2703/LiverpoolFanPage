@@ -1,0 +1,356 @@
+
+body {
+    background: url("audience-1866738.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    z-index: -1;
+}
+button {
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 82%;
+}
+
+
+img{
+    position: absolute;
+    transition: width 1s, height 1s,
+     transform 1s;
+}
+
+img:hover {
+    height: 100%;
+    width: 100%;
+    transform: rotate(360deg);
+
+}
+
+img:first-child {
+
+    top: 5%;
+    right: 7%;
+    left: 85%;
+    width: 10%;
+    height: auto;
+    position: absolute;
+    transition: transform 1s, width 1s, height 1s;
+    transform-origin: center;
+    z-index: 9999;
+}
+
+img:first-child:hover {
+    margin-top: 30px;
+    height: 70%;
+    width: auto;
+    transform: translateX( -45vw ) scale(1.3) rotate(-360deg);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+
+img:nth-child(2) {
+    position: absolute;
+    top: 47%;
+    right: 1%;
+    left: 80%;
+    width: 16%;
+    height: auto;
+}
+
+img:nth-child(3) {
+    position: absolute;
+    top: 95%;
+    right: 1%;
+    left: 80%;
+    width: 15%;
+    height: auto;
+}
+
+img:nth-child(4) {
+    position: absolute;
+    top: 130%;
+    right: 1%;
+    left: 80%;
+    width: 15%;
+    height: auto;
+}
+img:nth-child(5) {
+    top: 80%;
+    right: 1%;
+    left: 80%;
+    width: 15%;
+    height: auto;
+}
+
+
+.animation-text{
+    display: inline-block;
+    font-size: 50px;
+    margin-left: 6%;
+    animation-name: animatie;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animatie {
+    0%{ background-color: #83323A }
+    25% { background-color: #E65714 }
+    50% { background-color: #E8A235}
+    75% { background-color:#F5D189 }
+    100% { background-color: #D7DFC5 }
+}
+
+
+.container-area{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    column-gap: 5px;
+
+}
+
+.container{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    top: 120px;
+    left: 5%;
+    padding: 1%;
+    width: 9%;
+    height: 50px;
+    border-radius: 12px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.container::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.container:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.container::before {
+    content: "";
+    display:inline-block;
+    border-radius: 12px;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: red;
+    z-index: 0;
+    transition: transform .3s ease;
+}
+
+
+
+
+
+.mylink{
+    color: black;
+    text-decoration: none;
+}
+
+.mylink:hover{
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    top: 100%;
+    width: 80%;
+    border-radius: 10px;
+    z-index: 700;
+}
+
+.container:hover .dropdown-content {
+    display: block;
+}
+
+h1{
+    font-size: 3vw;
+    color: #f9f9f9;
+    margin-left: 5%;
+}
+
+
+.news_area{
+    display: inline-grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 25% 25% 25%;
+    margin-left: 5%;
+    grid-row-gap: 15%;
+    background-size: auto;
+
+}
+
+
+.news_box {
+
+    display: inline-grid;
+    background: white;
+    margin-left: 5%;
+    width: 90%;
+    height: 150%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.news_box_item1{
+
+    background-size: cover;
+    width: 19.5vw;
+    height: 13vw;
+    margin-left: 3.5%;
+    background-image: url("img_1.png");
+    text-align: center;
+}
+
+
+.news_box_item2{
+    margin-left: 3.5%;
+
+    background-size: cover;
+    width: 19.5vw;
+    height: 12vw;
+    background-image: url("img_2.png");
+    text-align: center;
+}
+
+.news_box_item3{
+    background-size: cover;
+    width: 19.5vw;
+    height: 12vw;
+    background-image: url("img_3.png");
+    text-align: center;
+    margin-left: 3.5%;
+
+}
+
+.news_box_item4{
+    background-size: cover;
+    width: 19.5vw;
+    height: 12vw;
+    background-image: url("img_4.png");
+    text-align: center;
+    margin-left: 3.5%;
+
+}
+
+.news_box_item5{
+    background-size: cover;
+    width: 19.5vw;
+    height: 12vw;
+    background-image: url("img_5.png");
+    text-align: center;
+    margin-left: 3.5%;
+
+}
+
+.news_box_item6{
+    background-size: cover;
+    width: 19.5vw;
+    height: 13vw;
+    background-image: url("img_6.png");
+    text-align: center;
+    margin-left: 3.5%;
+
+}
+
+.news_box_item7{
+    background-size: cover;
+    width: 19.5vw;
+    height: 11vw;
+    background-image: url("img_7.png");
+    text-align: center;
+    margin-left: 3.5%;
+
+}
+
+.news_box_item8{
+    background-size: cover;
+    width: 19.5vw;
+    height: 13vw;
+    background-image: url("img_8.png");
+    text-align: center;
+    margin-left: 3.5%;
+
+}
+
+.news_box_item9{
+    background-size: cover;
+    width: 19.5vw;
+    height: 12.5vw;
+    background-image: url("img_9.png");
+    text-align: center;
+    margin-left: 3.5%;
+
+}
+
+footer{
+    height: 100px;
+    border-color: red;
+    background-color: red;
+}
+p{
+    font-size: 20px;
+}
+
+.p1{
+    font-size: 13px;
+}
+
+/*.container.active {*/
+/*    !* Custom styles for the active state *!*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*}*/
+
+
+@media (max-width: 800px){
+
+    .news_area{
+        display: inline-grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        margin-left: 5%;
+        grid-row-gap: 10%;
+        background-size: auto;
+    }
+
+    .news_box{
+        display: inline-grid;
+    }
+    img{
+        display: none;
+    }
+    .container-area{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 30% 30%;
+    }
+    .container{
+        display: inline-block;
+        width: 40%;
+    }
+
+    .black-background {
+        background-color: black;
+    }
+
+}
